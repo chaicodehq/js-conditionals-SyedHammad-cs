@@ -24,7 +24,7 @@
  */
 export function getTicketPrice(age, isWeekend) {
   let price = 0;
-  if (age < 1 || isNaN(age)) return -1;
+  if (age < 0 || isNaN(age)) return -1;
   if (age >= 0 && age <= 12) {
     price = 8;
   } else if (age >= 13 && age <= 17) {
